@@ -1,5 +1,9 @@
 site_name: RTB 入門 — デジタル広告の仕組みを図解で学ぶ
 site_description: リアルタイム入札（RTB）の仕組みを、図とたとえ話でゼロから学ぶ学習資料
+site_url: https://yasut0ra.github.io/rtb-study/
+repo_url: https://github.com/yasut0ra/rtb-study
+repo_name: yasut0ra/rtb-study
+edit_uri: edit/main/docs/
 docs_dir: docs
 
 theme:

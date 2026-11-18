@@ -2,7 +2,7 @@
 
 Web ページやアプリに広告が表示されるまでの **約 0.1 秒** の間に行われている「オークション」— **RTB（Real-Time Bidding）** の仕組みを、図とたとえ話でゼロから学ぶための資料です。
 
-📖 **Web サイト版**: SITE_URL
+📖 **Web サイト版**: https://yasut0ra.github.io/rtb-study/
 
 ```mermaid
 flowchart LR
