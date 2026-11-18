@@ -1,0 +1,28 @@
+{
+  "id": "req-8f3a2c",
+  "bidid": "resp-001",
+  "cur": "JPY",
+  "seatbid": [
+    {
+      "seat": "agency-001",
+      "bid": [
+        {
+          "id": "bid-001",
+          "impid": "1",
+          "price": 250.0,
+          "adid": "ad-123",
+          "crid": "creative-123",
+          "cid": "campaign-sneaker-2026w",
+          "adomain": ["sneaker-shop.example"],
+          "cat": ["IAB18"],
+          "w": 300,
+          "h": 250,
+          "adm": "<a href=\"https://dsp.example/click?c=123\" target=\"_blank\"><img src=\"https://cdn.dsp.example/cr/123.png\" width=\"300\" height=\"250\" alt=\"スニーカーセール\"></a><img src=\"https://dsp.example/imp?c=123&p=${AUCTION_PRICE}\" width=\"1\" height=\"1\" style=\"display:none\">",
+          "nurl": "https://dsp.example/win?auction=${AUCTION_ID}&imp=${AUCTION_IMP_ID}&price=${AUCTION_PRICE}",
+          "burl": "https://dsp.example/bill?auction=${AUCTION_ID}&price=${AUCTION_PRICE}",
+          "lurl": "https://dsp.example/loss?auction=${AUCTION_ID}&reason=${AUCTION_LOSS}"
+        }
+      ]
+    }
+  ]
+}

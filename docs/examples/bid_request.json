@@ -1,0 +1,81 @@
+{
+  "id": "req-8f3a2c",
+  "at": 1,
+  "tmax": 120,
+  "cur": ["JPY"],
+  "imp": [
+    {
+      "id": "1",
+      "tagid": "news-sports-article-rect-1",
+      "banner": {
+        "w": 300,
+        "h": 250,
+        "format": [
+          { "w": 300, "h": 250 },
+          { "w": 336, "h": 280 }
+        ],
+        "pos": 1
+      },
+      "bidfloor": 80,
+      "bidfloorcur": "JPY",
+      "secure": 1,
+      "pmp": {
+        "private_auction": 0,
+        "deals": [
+          { "id": "SPORTS-PMP-01", "bidfloor": 800, "bidfloorcur": "JPY", "at": 1 }
+        ]
+      }
+    }
+  ],
+  "site": {
+    "id": "site-001",
+    "domain": "news.example.jp",
+    "page": "https://news.example.jp/sports/12345",
+    "cat": ["IAB17"],
+    "publisher": {
+      "id": "pub-123",
+      "name": "Example News"
+    }
+  },
+  "device": {
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",
+    "ip": "203.0.113.0",
+    "geo": {
+      "country": "JPN",
+      "region": "13",
+      "type": 2
+    },
+    "devicetype": 4,
+    "make": "Apple",
+    "os": "iOS",
+    "osv": "18.0",
+    "language": "ja"
+  },
+  "user": {
+    "id": "ssp-user-abc123",
+    "buyeruid": "dsp-user-xyz789",
+    "eids": [
+      {
+        "source": "uidapi.com",
+        "uids": [{ "id": "example-uid2-token", "atype": 3 }]
+      }
+    ]
+  },
+  "source": {
+    "tid": "txn-55aa77",
+    "schain": {
+      "complete": 1,
+      "ver": "1.0",
+      "nodes": [
+        { "asi": "ssp-a.example", "sid": "12345", "hp": 1 }
+      ]
+    }
+  },
+  "regs": {
+    "coppa": 0,
+    "gpp": "EXAMPLE-GPP-CONSENT-STRING",
+    "gpp_sid": [2]
+  },
+  "bcat": ["IAB25", "IAB26"],
+  "badv": ["competitor.example"]
+}

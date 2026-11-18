@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif" role="img" aria-label="ビューアビリティの判定例">
+  <style>
+    .screen{fill:#ffffff;stroke:#334155;stroke-width:3}
+    .line{fill:#cbd5e1}
+    .ad{fill:#f59e0b;opacity:.9}
+    .adout{fill:#f59e0b;opacity:.35}
+    .lbl{font-size:15px;font-weight:700;fill:#0f172a}
+    .sub{font-size:13px;fill:#334155}
+    .ok{fill:#16a34a;font-size:16px;font-weight:700}
+    .ng{fill:#dc2626;font-size:16px;font-weight:700}
+    .adtxt{font-size:13px;font-weight:700;fill:#ffffff}
+  </style>
+  <rect width="720" height="360" fill="#f8fafc"/>
+
+  <!-- Case 1 -->
+  <g transform="translate(30,40)">
+    <text class="ok" x="90" y="0" text-anchor="middle">✔ Viewable</text>
+    <rect class="screen" x="10" y="15" width="160" height="200" rx="12"/>
+    <rect class="line" x="25" y="35" width="130" height="10" rx="3"/>
+    <rect class="line" x="25" y="55" width="110" height="10" rx="3"/>
+    <rect class="ad" x="25" y="85" width="130" height="90" rx="4"/>
+    <text class="adtxt" x="90" y="135" text-anchor="middle">広告</text>
+    <rect class="line" x="25" y="190" width="120" height="10" rx="3"/>
+    <text class="lbl" x="90" y="245" text-anchor="middle">100% が画面内</text>
+    <text class="sub" x="90" y="265" text-anchor="middle">1秒以上表示 → OK</text>
+  </g>
+
+  <!-- Case 2 -->
+  <g transform="translate(270,40)">
+    <text class="ok" x="90" y="0" text-anchor="middle">✔ Viewable</text>
+    <rect class="adout" x="25" y="170" width="130" height="90" rx="4"/>
+    <rect class="screen" x="10" y="15" width="160" height="200" rx="12" fill-opacity="0"/>
+    <rect class="line" x="25" y="35" width="130" height="10" rx="3"/>
+    <rect class="line" x="25" y="55" width="110" height="10" rx="3"/>
+    <rect class="line" x="25" y="75" width="125" height="10" rx="3"/>
+    <rect class="line" x="25" y="95" width="100" height="10" rx="3"/>
+    <rect class="ad" x="25" y="170" width="130" height="45" rx="4"/>
+    <text class="adtxt" x="90" y="198" text-anchor="middle">広告</text>
+    <rect class="screen" x="10" y="15" width="160" height="200" rx="12" fill="none"/>
+    <text class="lbl" x="90" y="285" text-anchor="middle">ちょうど 50% が画面内</text>
+    <text class="sub" x="90" y="305" text-anchor="middle">1秒以上表示 → OK（ギリギリ）</text>
+  </g>
+
+  <!-- Case 3 -->
+  <g transform="translate(510,40)">
+    <text class="ng" x="90" y="0" text-anchor="middle">✘ Not Viewable</text>
+    <rect class="screen" x="10" y="15" width="160" height="200" rx="12"/>
+    <rect class="line" x="25" y="35" width="130" height="10" rx="3"/>
+    <rect class="line" x="25" y="55" width="110" height="10" rx="3"/>
+    <rect class="line" x="25" y="75" width="125" height="10" rx="3"/>
+    <rect class="line" x="25" y="95" width="100" height="10" rx="3"/>
+    <rect class="line" x="25" y="115" width="130" height="10" rx="3"/>
+    <rect class="line" x="25" y="135" width="90" height="10" rx="3"/>
+    <rect class="adout" x="25" y="235" width="130" height="70" rx="4"/>
+    <text class="adtxt" x="90" y="275" text-anchor="middle" fill="#92400e">広告</text>
+    <text class="lbl" x="90" y="325" text-anchor="middle">画面の外（スクロール前）</text>
+    <text class="sub" x="90" y="345" text-anchor="middle">表示はされたが誰も見ていない</text>
+  </g>
+</svg>
