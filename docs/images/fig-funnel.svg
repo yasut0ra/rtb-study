@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 270" width="760" height="270" role="img" aria-label="広告のファネル：表示からコンバージョンまで" font-family="'Noto Sans JP','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic','Meiryo',sans-serif">
+<title>広告のファネル：表示からコンバージョンまで</title>
+<defs>
+<marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker>
+<marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker>
+<marker id="ah-buy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/></marker>
+<marker id="ah-sell" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+<marker id="ah-market" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+<marker id="ah-alert" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+<marker id="ah-good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+</defs>
+<rect x="0.5" y="0.5" width="759" height="269" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<polygon points="40.0,30 720.0,30 615.0,86 145.0,86" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+<text x="380" y="50" font-size="13" fill="#0f172a" text-anchor="middle" font-weight="700" dominant-baseline="middle" >インプレッション（表示）</text>
+<text x="380" y="70" font-size="15" fill="#0f172a" text-anchor="middle" font-weight="700" dominant-baseline="middle" >1,000,000 回</text>
+<rect x="675.6" y="83" width="68.8" height="22" rx="11" fill="#fffbeb" stroke="#d97706"/><text x="710.0" y="94" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700" dominant-baseline="middle" >CTR 0.5%</text>
+<polygon points="145.0,102 615.0,102 510.0,158 250.0,158" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+<text x="380" y="122" font-size="13" fill="#312e81" text-anchor="middle" font-weight="700" dominant-baseline="middle" >クリック</text>
+<text x="380" y="142" font-size="15" fill="#312e81" text-anchor="middle" font-weight="700" dominant-baseline="middle" >5,000 回</text>
+<rect x="577.2" y="155" width="55.6" height="22" rx="11" fill="#fffbeb" stroke="#d97706"/><text x="605.0" y="166" font-size="11" fill="#78350f" text-anchor="middle" font-weight="700" dominant-baseline="middle" >CVR 2%</text>
+<polygon points="250.0,174 510.0,174 450.0,230 310.0,230" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="380" y="194" font-size="13" fill="#14532d" text-anchor="middle" font-weight="700" dominant-baseline="middle" >コンバージョン（購入）</text>
+<text x="380" y="214" font-size="15" fill="#14532d" text-anchor="middle" font-weight="700" dominant-baseline="middle" >100 件</text>
+<text x="380" y="252" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >※ 幅は実際の比率ではなくイメージ</text>
+</svg>

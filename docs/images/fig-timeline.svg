@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-label="1 インプレッションの処理タイムライン" font-family="'Noto Sans JP','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic','Meiryo',sans-serif">
+<title>1 インプレッションの処理タイムライン</title>
+<defs>
+<marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker>
+<marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker>
+<marker id="ah-buy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/></marker>
+<marker id="ah-sell" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+<marker id="ah-market" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+<marker id="ah-alert" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+<marker id="ah-good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+</defs>
+<rect x="0.5" y="0.5" width="759" height="299" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<line x1="170.0" y1="56" x2="170.0" y2="246" stroke="#cbd5e1" stroke-width="1"/>
+<text x="170.0" y="262" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >0 ms</text>
+<line x1="263.3" y1="56" x2="263.3" y2="246" stroke="#cbd5e1" stroke-width="1"/>
+<text x="263.33333333333337" y="262" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >20 ms</text>
+<line x1="356.7" y1="56" x2="356.7" y2="246" stroke="#cbd5e1" stroke-width="1"/>
+<text x="356.6666666666667" y="262" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >40 ms</text>
+<line x1="450.0" y1="56" x2="450.0" y2="246" stroke="#cbd5e1" stroke-width="1"/>
+<text x="450.0" y="262" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >60 ms</text>
+<line x1="543.3" y1="56" x2="543.3" y2="246" stroke="#cbd5e1" stroke-width="1"/>
+<text x="543.3333333333334" y="262" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >80 ms</text>
+<line x1="636.7" y1="56" x2="636.7" y2="246" stroke="#cbd5e1" stroke-width="1"/>
+<text x="636.6666666666667" y="262" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >100 ms</text>
+<line x1="730.0" y1="56" x2="730.0" y2="246" stroke="#cbd5e1" stroke-width="1"/>
+<text x="730.0" y="262" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >120 ms</text>
+<text x="150" y="80" font-size="13" fill="#78350f" text-anchor="end" font-weight="700" dominant-baseline="middle" >SSP</text>
+<text x="150" y="140" font-size="13" fill="#0f172a" text-anchor="end" font-weight="700" dominant-baseline="middle" >ネットワーク</text>
+<text x="150" y="200" font-size="13" fill="#312e81" text-anchor="end" font-weight="700" dominant-baseline="middle" >DSP 内部</text>
+<rect x="170.0" y="65" width="46.7" height="30" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/><text x="170.0" y="54" font-size="11" fill="#78350f" text-anchor="start" font-weight="400" dominant-baseline="middle" >受信・作成</text>
+<rect x="216.7" y="65" width="466.7" height="30" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/><text x="450.0" y="80" font-size="12" fill="#78350f" text-anchor="middle" font-weight="700" dominant-baseline="middle" >DSP の応答を待つ（tmax = 100 ms）</text>
+<rect x="683.3" y="65" width="37.3" height="30" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/><text x="683.3333333333334" y="106" font-size="11" fill="#78350f" text-anchor="start" font-weight="400" dominant-baseline="middle" >落札決定</text>
+<rect x="216.7" y="125" width="56.0" height="30" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/><text x="216.66666666666669" y="114" font-size="11" fill="#0f172a" text-anchor="start" font-weight="400" dominant-baseline="middle" >Bid Request</text>
+<rect x="580.7" y="125" width="56.0" height="30" rx="6" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/><text x="580.6666666666667" y="114" font-size="11" fill="#0f172a" text-anchor="start" font-weight="400" dominant-baseline="middle" >Bid Response</text>
+<rect x="272.7" y="185" width="93.3" height="30" rx="6" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/><text x="272.6666666666667" y="174" font-size="11" fill="#312e81" text-anchor="start" font-weight="400" dominant-baseline="middle" >ユーザー情報の参照</text>
+<rect x="366.0" y="185" width="214.7" height="30" rx="6" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/><text x="473.33333333333337" y="200" font-size="12" fill="#312e81" text-anchor="middle" font-weight="700" dominant-baseline="middle" >CTR 予測・入札額の計算</text>
+<line x1="683.3" y1="48" x2="683.3" y2="246" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="683.3333333333334" y="38" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700" dominant-baseline="middle" >締め切り</text>
+<text x="380" y="284" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >※ 数値は一例。実際の tmax は SSP により 100〜300 ms 程度</text>
+</svg>

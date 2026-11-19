@@ -2,7 +2,10 @@
   "id": "req-8f3a2c",
   "at": 1,
   "tmax": 120,
-  "cur": ["JPY"],
+  "cur": [
+    "JPY"
+  ],
+  "cattax": 1,
   "imp": [
     {
       "id": "1",
@@ -11,8 +14,14 @@
         "w": 300,
         "h": 250,
         "format": [
-          { "w": 300, "h": 250 },
-          { "w": 336, "h": 280 }
+          {
+            "w": 300,
+            "h": 250
+          },
+          {
+            "w": 336,
+            "h": 280
+          }
         ],
         "pos": 1
       },
@@ -22,7 +31,12 @@
       "pmp": {
         "private_auction": 0,
         "deals": [
-          { "id": "SPORTS-PMP-01", "bidfloor": 800, "bidfloorcur": "JPY", "at": 1 }
+          {
+            "id": "SPORTS-PMP-01",
+            "bidfloor": 800,
+            "bidfloorcur": "JPY",
+            "at": 1
+          }
         ]
       }
     }
@@ -31,7 +45,10 @@
     "id": "site-001",
     "domain": "news.example.jp",
     "page": "https://news.example.jp/sports/12345",
-    "cat": ["IAB17"],
+    "cattax": 1,
+    "cat": [
+      "IAB17"
+    ],
     "publisher": {
       "id": "pub-123",
       "name": "Example News"
@@ -57,7 +74,12 @@
     "eids": [
       {
         "source": "uidapi.com",
-        "uids": [{ "id": "example-uid2-token", "atype": 3 }]
+        "uids": [
+          {
+            "id": "example-uid2-token",
+            "atype": 3
+          }
+        ]
       }
     ]
   },
@@ -67,15 +89,22 @@
       "complete": 1,
       "ver": "1.0",
       "nodes": [
-        { "asi": "ssp-a.example", "sid": "12345", "hp": 1 }
+        {
+          "asi": "ssp-a.example",
+          "sid": "1111",
+          "hp": 1
+        }
       ]
     }
   },
   "regs": {
-    "coppa": 0,
-    "gpp": "EXAMPLE-GPP-CONSENT-STRING",
-    "gpp_sid": [2]
+    "coppa": 0
   },
-  "bcat": ["IAB25", "IAB26"],
-  "badv": ["competitor.example"]
+  "bcat": [
+    "IAB25",
+    "IAB26"
+  ],
+  "badv": [
+    "competitor.example"
+  ]
 }

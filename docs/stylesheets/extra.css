@@ -1,0 +1,183 @@
+/* ------------------------------------------------------------------
+   RTB 入門 — 本文の組版スタイル
+   ------------------------------------------------------------------ */
+
+:root {
+  --md-primary-fg-color: #312e81;
+  --md-primary-fg-color--light: #4f46e5;
+  --md-primary-fg-color--dark: #1e1b4b;
+  --md-accent-fg-color: #d97706;
+  --book-figure-bg: #ffffff;
+  --book-caption: #475569;
+  --book-rule: #e2e8f0;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1e1b4b;
+  --md-accent-fg-color: #f59e0b;
+  --md-default-bg-color: #0f172a;
+  --book-caption: #94a3b8;
+  --book-rule: #334155;
+  --md-typeset-a-color: #a5b4fc;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active {
+  color: #a5b4fc;
+}
+
+/* 本文：和文に合わせて行間と字間を広めにとる */
+.md-typeset {
+  font-size: 0.84rem;
+  line-height: 1.95;
+  letter-spacing: 0.02em;
+  font-feature-settings: "palt" 0;
+}
+
+.md-typeset p,
+.md-typeset li {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  word-break: normal;
+  line-break: strict;
+}
+
+/* 見出し */
+.md-typeset h1 {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+  letter-spacing: 0.04em;
+  padding-bottom: 0.4em;
+  border-bottom: 3px solid var(--md-primary-fg-color--light);
+}
+
+.md-typeset h2 {
+  font-weight: 700;
+  margin-top: 2.4em;
+  padding-left: 0.6em;
+  border-left: 5px solid var(--md-primary-fg-color--light);
+}
+
+.md-typeset h3 {
+  font-weight: 700;
+}
+
+/* 図版：ダークモードでも白い台紙に載せる */
+.md-typeset figure {
+  margin: 2em auto;
+}
+
+.md-typeset figure img {
+  background: var(--book-figure-bg);
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgb(15 23 42 / 0.08);
+}
+
+.md-typeset figcaption,
+.md-typeset p.figcap {
+  max-width: none;
+  margin: 0.6em auto 2em;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--book-caption);
+  text-align: center;
+}
+
+/* Mermaid 図の余白をそろえる */
+.md-typeset .mermaid {
+  margin: 1.6em 0 0;
+  text-align: center;
+}
+
+/* 表 */
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+  border-radius: 8px;
+}
+
+.md-typeset table:not([class]) th {
+  background: color-mix(in srgb, var(--md-primary-fg-color--light) 10%, transparent);
+  font-weight: 700;
+}
+
+/* 数式 */
+.md-typeset .arithmatex {
+  overflow-x: auto;
+}
+
+/* 表紙 */
+.cover {
+  margin: 1rem 0 2.5rem;
+  padding: 3rem 2rem 2.5rem;
+  border-radius: 20px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 85% 20%, rgb(245 158 11 / 0.35), transparent 40%),
+    linear-gradient(135deg, #1e1b4b 0%, #312e81 55%, #4338ca 100%);
+  text-align: center;
+}
+
+.md-typeset .cover h1.cover-title {
+  margin: 0.2em 0 0.1em;
+  font-size: 2.6rem;
+  color: #fff;
+  border: none;
+  letter-spacing: 0.08em;
+}
+
+.md-typeset .cover .headerlink {
+  display: none;
+}
+
+.md-typeset .cover-kicker {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #fcd34d;
+}
+
+.md-typeset .cover-subtitle {
+  margin: 0.4em 0 1.4em;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.md-typeset .cover-meta {
+  margin-bottom: 1.6em;
+  font-size: 0.75rem;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.md-typeset .cover .md-button {
+  margin: 0.3em;
+  color: #fff;
+  border-color: rgb(255 255 255 / 0.7);
+}
+
+.md-typeset .cover .md-button--primary {
+  color: #1e1b4b;
+  background: #fcd34d;
+  border-color: #fcd34d;
+}
+
+/* 奥付 */
+.colophon {
+  padding: 1.2rem 1.6rem;
+  border: 1px solid var(--book-rule);
+  border-radius: 12px;
+}
+
+/* 脚注 */
+.md-typeset .footnote {
+  font-size: 0.72rem;
+  color: var(--book-caption);
+}
+
+@media print {
+  .md-typeset figure img {
+    box-shadow: none;
+  }
+}

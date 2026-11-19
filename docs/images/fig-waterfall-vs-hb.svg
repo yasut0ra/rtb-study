@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 390" width="760" height="390" role="img" aria-label="ウォーターフォールとヘッダービディングの比較" font-family="'Noto Sans JP','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic','Meiryo',sans-serif">
+<title>ウォーターフォールとヘッダービディングの比較</title>
+<defs>
+<marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker>
+<marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker>
+<marker id="ah-buy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/></marker>
+<marker id="ah-sell" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+<marker id="ah-market" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+<marker id="ah-alert" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+<marker id="ah-good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+</defs>
+<rect x="0.5" y="0.5" width="759" height="389" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="190" y="32" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >ウォーターフォール（従来）</text>
+<rect x="110" y="52" width="160" height="40" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+<text x="190.0" y="72.0" font-size="13" fill="#0f172a" text-anchor="middle" font-weight="700" dominant-baseline="middle" >広告リクエスト</text>
+<line x1="190" y1="92" x2="190" y2="116" stroke="#64748b" stroke-width="2" marker-end="url(#ah-muted)"/>
+<rect x="90" y="118" width="200" height="44" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="190.0" y="140.0" font-size="13" fill="#064e3b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >SSP A（フロア 300 円）</text>
+<line x1="290" y1="140" x2="330" y2="140" stroke="#16a34a" stroke-width="1.5" marker-end="url(#ah-good)"/>
+<text x="336" y="140" font-size="11" fill="#14532d" text-anchor="start" font-weight="400" dominant-baseline="middle" >売れたら終了</text>
+<line x1="190" y1="162" x2="190" y2="194" stroke="#64748b" stroke-width="2" marker-end="url(#ah-muted)"/>
+<rect x="90" y="196" width="200" height="44" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="190.0" y="218.0" font-size="13" fill="#064e3b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >SSP B（フロア 200 円）</text>
+<line x1="290" y1="218" x2="330" y2="218" stroke="#16a34a" stroke-width="1.5" marker-end="url(#ah-good)"/>
+<text x="336" y="218" font-size="11" fill="#14532d" text-anchor="start" font-weight="400" dominant-baseline="middle" >売れたら終了</text>
+<line x1="190" y1="240" x2="190" y2="272" stroke="#64748b" stroke-width="2" marker-end="url(#ah-muted)"/>
+<rect x="90" y="274" width="200" height="44" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="190.0" y="296.0" font-size="13" fill="#064e3b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >SSP C（フロア 100 円）</text>
+<line x1="290" y1="296" x2="330" y2="296" stroke="#16a34a" stroke-width="1.5" marker-end="url(#ah-good)"/>
+<text x="336" y="296" font-size="11" fill="#14532d" text-anchor="start" font-weight="400" dominant-baseline="middle" >売れたら終了</text>
+<text x="200" y="179" font-size="11" fill="#64748b" text-anchor="start" font-weight="400" dominant-baseline="middle" >売れなければ次へ</text>
+<text x="190" y="346" font-size="12" fill="#7f1d1d" text-anchor="middle" font-weight="400" dominant-baseline="middle" >順番に問い合わせるので遅く、</text>
+<text x="190" y="366" font-size="12" fill="#7f1d1d" text-anchor="middle" font-weight="400" dominant-baseline="middle" >後ろの SSP の高値を取りこぼす</text>
+<line x1="410" y1="30" x2="410" y2="370" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="585" y="32" font-size="15" fill="#1e293b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >ヘッダービディング（現在）</text>
+<rect x="505" y="52" width="160" height="40" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+<text x="585.0" y="72.0" font-size="13" fill="#78350f" text-anchor="middle" font-weight="700" dominant-baseline="middle" >Prebid.js など</text>
+<line x1="585" y1="92" x2="485" y2="136" stroke="#d97706" stroke-width="1.5" marker-end="url(#ah-market)"/>
+<rect x="440" y="138" width="90" height="56" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="485.0" y="158.85" font-size="13" fill="#064e3b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >SSP A</text>
+<text x="485.0" y="175.75" font-size="11" fill="#064e3b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >300 円</text>
+<line x1="485" y1="194" x2="585" y2="240" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah-muted)"/>
+<line x1="585" y1="92" x2="590" y2="136" stroke="#d97706" stroke-width="1.5" marker-end="url(#ah-market)"/>
+<rect x="545" y="138" width="90" height="56" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="590.0" y="158.85" font-size="13" fill="#14532d" text-anchor="middle" font-weight="700" dominant-baseline="middle" >SSP B</text>
+<text x="590.0" y="175.75" font-size="11" fill="#14532d" text-anchor="middle" font-weight="400" dominant-baseline="middle" >500 円</text>
+<line x1="590" y1="194" x2="585" y2="240" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah-muted)"/>
+<line x1="585" y1="92" x2="695" y2="136" stroke="#d97706" stroke-width="1.5" marker-end="url(#ah-market)"/>
+<rect x="650" y="138" width="90" height="56" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="695.0" y="158.85" font-size="13" fill="#064e3b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >SSP C</text>
+<text x="695.0" y="175.75" font-size="11" fill="#064e3b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >250 円</text>
+<line x1="695" y1="194" x2="585" y2="240" stroke="#64748b" stroke-width="1.5" marker-end="url(#ah-muted)"/>
+<rect x="495" y="242" width="180" height="44" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+<text x="585.0" y="264.0" font-size="13" fill="#0f172a" text-anchor="middle" font-weight="700" dominant-baseline="middle" >アドサーバーで比較</text>
+<line x1="585" y1="286" x2="585" y2="306" stroke="#16a34a" stroke-width="2" marker-end="url(#ah-good)"/>
+<rect x="495" y="308" width="180" height="40" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="585.0" y="328.0" font-size="13" fill="#14532d" text-anchor="middle" font-weight="700" dominant-baseline="middle" >SSP B（500 円）を表示</text>
+<text x="585" y="366" font-size="12" fill="#14532d" text-anchor="middle" font-weight="400" dominant-baseline="middle" >全 SSP に同時に聞き、最高値を選ぶ</text>
+</svg>

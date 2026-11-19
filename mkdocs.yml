@@ -1,71 +1,100 @@
-site_name: RTB 入門 — デジタル広告の仕組みを図解で学ぶ
-site_description: リアルタイム入札（RTB）の仕組みを、図とたとえ話でゼロから学ぶ学習資料
+site_name: RTB 入門
+site_description: デジタル広告のリアルタイム入札（RTB）を、図とたとえ話でゼロから理解する学習書
+site_author: yasut0ra
 site_url: https://yasut0ra.github.io/rtb-study/
 repo_url: https://github.com/yasut0ra/rtb-study
 repo_name: yasut0ra/rtb-study
 edit_uri: edit/main/docs/
 docs_dir: docs
+copyright: >-
+  &copy; 2026 yasut0ra —
+  文章・図版は <a href="https://creativecommons.org/licenses/by/4.0/deed.ja">CC BY 4.0</a>、
+  コードは MIT ライセンスで提供しています
 
 theme:
   name: material
   language: ja
+  font:
+    text: Noto Sans JP
+    code: Source Code Pro
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.sections
     - navigation.top
     - navigation.footer
-    - navigation.indexes
     - toc.follow
     - search.highlight
     - content.code.copy
+    - content.footnote.tooltips
+    - content.action.edit
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: amber
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: ダークモードに切り替え
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: amber
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: ライトモードに切り替え
-  icon:
-    logo: material/gavel
 
 nav:
-  - ホーム: index.md
-  - 基礎:
-      - 1. デジタル広告の全体像: 01-overview.md
-      - 2. RTB の流れ: 02-rtb-flow.md
-      - 3. OpenRTB プロトコル: 03-openrtb.md
-  - 仕組みと戦略:
-      - 4. オークション方式: 04-auction.md
-      - 5. DSP の入札ロジック: 05-dsp-bidding.md
-      - 6. 取引形態: 06-deals.md
-  - 周辺の課題:
-      - 7. プライバシーと識別子: 07-privacy.md
-      - 8. 透明性・品質・不正対策: 08-quality-fraud.md
-      - 9. 指標と計算式: 09-metrics.md
-  - 用語集: glossary.md
-  - 確認問題: quiz.md
+  - 表紙: index.md
+  - はじめに: preface.md
+  - 第Ⅰ部 基礎:
+      - 第1章 デジタル広告の全体像: 01-overview.md
+      - 第2章 RTB の流れ: 02-rtb-flow.md
+      - 第3章 OpenRTB プロトコル: 03-openrtb.md
+  - 第Ⅱ部 仕組みと戦略:
+      - 第4章 オークション方式: 04-auction.md
+      - 第5章 DSP の入札ロジック: 05-dsp-bidding.md
+      - 第6章 取引形態: 06-deals.md
+  - 第Ⅲ部 周辺の課題:
+      - 第7章 プライバシーと識別子: 07-privacy.md
+      - 第8章 透明性・品質・不正対策: 08-quality-fraud.md
+      - 第9章 指標と計算式: 09-metrics.md
+  - 付録:
+      - 用語集: glossary.md
+      - 確認問題: quiz.md
+      - 参考文献: references.md
+      - 奥付: colophon.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yasut0ra/rtb-study
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
 
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
+  - def_list
+  - footnotes
   - md_in_html
   - tables
   - toc:
       permalink: true
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.inlinehilite
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -74,6 +103,5 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+not_in_nav: |
+  /examples/**

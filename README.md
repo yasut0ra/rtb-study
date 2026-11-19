@@ -1,33 +1,25 @@
-# RTB 入門 — デジタル広告の仕組みを図解で学ぶ
+# RTB 入門 — デジタル広告のリアルタイム入札を、ゼロから理解する
 
-Web ページやアプリに広告が表示されるまでの **約 0.1 秒** の間に行われている「オークション」— **RTB（Real-Time Bidding）** の仕組みを、図とたとえ話でゼロから学ぶための資料です。
+[![Deploy](https://github.com/yasut0ra/rtb-study/actions/workflows/pages.yml/badge.svg)](https://github.com/yasut0ra/rtb-study/actions/workflows/pages.yml)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/deed.ja)
 
-📖 **Web サイト版**: https://yasut0ra.github.io/rtb-study/
+Web ページを開いた瞬間に、広告枠をめぐって行われる約 0.1 秒のオークション「RTB（Real-Time Bidding）」を、図とたとえ話でゼロから解説する学習書です。
 
-```mermaid
-flowchart LR
-    U(("👤 ページを開く")) --> S["🏪 SSP<br/>この枠、誰か買いませんか？"]
-    S --> D1["🛒 DSP A: 300円"]
-    S --> D2["🛒 DSP B: 450円"]
-    S --> D3["🛒 DSP C: パス"]
-    D1 & D2 & D3 --> A{"🔨 オークション"}
-    A --> W["🏆 DSP B の広告を表示"]
-```
+**Web 版で読む：<https://yasut0ra.github.io/rtb-study/>**
+
+GitHub 上の Markdown でも読めますが、囲み記事・数式・脚注は Web 版で正しく表示されます。
+
+![RTB の登場人物と、お金・広告枠の流れ](docs/images/fig-ecosystem.svg)
 
 ## 目次
 
-| # | 章 | 内容 |
-|---|----|------|
-| 1 | [デジタル広告の全体像](docs/01-overview.md) | 登場人物（広告主・媒体・DSP・SSP）とたとえ話 |
-| 2 | [RTB の流れ](docs/02-rtb-flow.md) | 広告リクエストから表示までの 100ms |
-| 3 | [OpenRTB プロトコル](docs/03-openrtb.md) | Bid Request / Bid Response の中身 |
-| 4 | [オークション方式](docs/04-auction.md) | セカンドプライス・ファーストプライス・ヘッダービディング |
-| 5 | [DSP の入札ロジック](docs/05-dsp-bidding.md) | 入札額の計算・CTR 予測・予算ペーシング |
-| 6 | [取引形態](docs/06-deals.md) | オープンオークション・PMP・保証型 |
-| 7 | [プライバシーと識別子](docs/07-privacy.md) | Cookie・広告 ID・同意管理・規制 |
-| 8 | [透明性・品質・不正対策](docs/08-quality-fraud.md) | ads.txt・アドフラウド・ビューアビリティ |
-| 9 | [指標と計算式](docs/09-metrics.md) | CPM・CTR・CPA・ROAS |
-| – | [用語集](docs/glossary.md) / [確認問題](docs/quiz.md) | 復習用 |
+| 部 | 章 |
+|----|----|
+| — | [はじめに](docs/preface.md) |
+| 第Ⅰ部 基礎 | [第1章 デジタル広告の全体像](docs/01-overview.md)・[第2章 RTB の流れ](docs/02-rtb-flow.md)・[第3章 OpenRTB プロトコル](docs/03-openrtb.md) |
+| 第Ⅱ部 仕組みと戦略 | [第4章 オークション方式](docs/04-auction.md)・[第5章 DSP の入札ロジック](docs/05-dsp-bidding.md)・[第6章 取引形態](docs/06-deals.md) |
+| 第Ⅲ部 周辺の課題 | [第7章 プライバシーと識別子](docs/07-privacy.md)・[第8章 透明性・品質・不正対策](docs/08-quality-fraud.md)・[第9章 指標と計算式](docs/09-metrics.md) |
+| 付録 | [用語集](docs/glossary.md)・[確認問題](docs/quiz.md)・[参考文献](docs/references.md)・[奥付](docs/colophon.md) |
 
 ## ハンズオン
 
@@ -35,16 +27,26 @@ flowchart LR
 python docs/examples/auction_simulator.py
 ```
 
-オークション方式やフロアプライスで、媒体社の収益と DSP の利益がどう変わるかをシミュレーションします（Python 3.8+、標準ライブラリのみ）。
-OpenRTB のサンプル JSON は [docs/examples/](docs/examples/) にあります。
+オークション方式やフロアプライスによって、媒体社の収益と DSP の利益がどう変わるかをシミュレーションします（Python 3.8 以降、標準ライブラリのみ）。OpenRTB 2.6 形式のサンプル JSON は[docs/examples/](docs/examples/)にあります。
 
-## サイトをローカルで見る
+## 執筆・ビルド
 
 ```bash
-pip install -r requirements.txt
-mkdocs serve
+pip install -r requirements.txt   # サイト生成（MkDocs Material）
+mkdocs serve                      # http://127.0.0.1:8000 でプレビュー
+
+npm install                       # 校正ツール（textlint）
+npm run lint                      # 日本語の表記ゆれ・文体をチェック
+
+python tools/make_figures.py      # SVG 図版を再生成
 ```
 
-`main` ブランチに push すると、GitHub Actions で GitHub Pages に自動公開されます（[.github/workflows/pages.yml](.github/workflows/pages.yml)）。
+文体や表記のルールは[CONTRIBUTING.md](CONTRIBUTING.md)にまとめています。
+`main` ブランチへ push すると、GitHub Actions が校正とビルドを行い、GitHub Pages に公開します。
 
-> ⚠️ アドテク業界、特にプライバシー関連は変化が速い分野です。本資料は 2026 年 11 月時点の理解に基づいています。実務では一次情報を確認してください。
+## ライセンス
+
+- 文章・図版：[CC BY 4.0](LICENSE)（出典として「yasut0ra『RTB 入門』」と URL を表示してください）
+- サンプルコード・スクリプト（`docs/examples/`、`tools/`）：[MIT](LICENSE-CODE)
+
+誤りの指摘や改善の提案は[Issue](https://github.com/yasut0ra/rtb-study/issues)へお願いします。

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="ads.txt・sellers.json・SupplyChain Object による販売経路の検証" font-family="'Noto Sans JP','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic','Meiryo',sans-serif">
+<title>ads.txt・sellers.json・SupplyChain Object による販売経路の検証</title>
+<defs>
+<marker id="ah-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker>
+<marker id="ah-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker>
+<marker id="ah-buy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/></marker>
+<marker id="ah-sell" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+<marker id="ah-market" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+<marker id="ah-alert" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+<marker id="ah-good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+</defs>
+<rect x="0.5" y="0.5" width="759" height="399" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="20" y="40" width="140" height="60" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="90.0" y="61.75" font-size="15" fill="#064e3b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >媒体社</text>
+<text x="90.0" y="81.25" font-size="13" fill="#064e3b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >news.example.jp</text>
+<rect x="210" y="40" width="140" height="60" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="280.0" y="61.75" font-size="15" fill="#064e3b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >SSP A</text>
+<text x="280.0" y="81.25" font-size="13" fill="#064e3b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >ssp-a.example</text>
+<rect x="400" y="40" width="140" height="60" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="470.0" y="61.75" font-size="15" fill="#064e3b" text-anchor="middle" font-weight="700" dominant-baseline="middle" >SSP B</text>
+<text x="470.0" y="81.25" font-size="13" fill="#064e3b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >ssp-b.example</text>
+<rect x="590" y="40" width="150" height="60" rx="10" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+<text x="665.0" y="61.75" font-size="15" fill="#312e81" text-anchor="middle" font-weight="700" dominant-baseline="middle" >DSP</text>
+<text x="665.0" y="81.25" font-size="13" fill="#312e81" text-anchor="middle" font-weight="400" dominant-baseline="middle" >入札するか判断</text>
+<line x1="164" y1="70" x2="206" y2="70" stroke="#1e293b" stroke-width="2" marker-end="url(#ah-ink)"/>
+<line x1="354" y1="70" x2="396" y2="70" stroke="#1e293b" stroke-width="2" marker-end="url(#ah-ink)"/>
+<line x1="544" y1="70" x2="586" y2="70" stroke="#1e293b" stroke-width="2" marker-end="url(#ah-ink)"/>
+<text x="375" y="26" font-size="11" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >SSP A が SSP B に再販</text>
+<rect x="420" y="140" width="320" height="96" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+<text x="434" y="160" font-size="12" fill="#78350f" text-anchor="start" font-weight="700" dominant-baseline="middle" >schain（Bid Request 内の販売経路の記録）</text>
+<text x="434" y="186" font-size="12" fill="#1e293b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-family="'Source Code Pro',Consolas,Menlo,monospace">[0] asi: ssp-a.example  sid: 1111</text>
+<text x="434" y="208" font-size="12" fill="#1e293b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-family="'Source Code Pro',Consolas,Menlo,monospace">[1] asi: ssp-b.example  sid: 2222</text>
+<line x1="560" y1="102" x2="560" y2="138" stroke="#d97706" stroke-width="1.5" marker-end="url(#ah-market)"/>
+<rect x="20" y="262" width="250" height="96" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+<text x="34" y="282" font-size="12" fill="#0f172a" text-anchor="start" font-weight="700" dominant-baseline="middle" >news.example.jp/ads.txt</text>
+<text x="34" y="308" font-size="12" fill="#1e293b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-family="'Source Code Pro',Consolas,Menlo,monospace">ssp-a.example, 1111, DIRECT</text>
+<text x="34" y="330" font-size="12" fill="#1e293b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-family="'Source Code Pro',Consolas,Menlo,monospace">ssp-b.example, 2222, RESELLER</text>
+<rect x="290" y="262" width="250" height="96" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+<text x="304" y="282" font-size="12" fill="#0f172a" text-anchor="start" font-weight="700" dominant-baseline="middle" >各 SSP の sellers.json</text>
+<text x="304" y="308" font-size="12" fill="#1e293b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-family="'Source Code Pro',Consolas,Menlo,monospace">ssp-a: 1111 = news.example.jp</text>
+<text x="304" y="330" font-size="12" fill="#1e293b" text-anchor="start" font-weight="400" dominant-baseline="middle" font-family="'Source Code Pro',Consolas,Menlo,monospace">ssp-b: 2222 = SSP A（仲介）</text>
+<line x1="90" y1="102" x2="90" y2="260" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah-muted)"/>
+<text x="98" y="180" font-size="11" fill="#64748b" text-anchor="start" font-weight="400" dominant-baseline="middle" >媒体社が公開</text>
+<line x1="280" y1="102" x2="380" y2="260" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#ah-muted)"/>
+<text x="336" y="170" font-size="11" fill="#64748b" text-anchor="start" font-weight="400" dominant-baseline="middle" >各 SSP が公開</text>
+<rect x="560" y="262" width="180" height="96" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="650.0" y="301.75" font-size="15" fill="#14532d" text-anchor="middle" font-weight="700" dominant-baseline="middle" >DSP が照合</text>
+<text x="650.0" y="321.25" font-size="13" fill="#14532d" text-anchor="middle" font-weight="400" dominant-baseline="middle" >経路はすべて正規？</text>
+<line x1="650" y1="238" x2="650" y2="260" stroke="#16a34a" stroke-width="1.5" marker-end="url(#ah-good)"/>
+<text x="380" y="382" font-size="12" fill="#64748b" text-anchor="middle" font-weight="400" dominant-baseline="middle" >各ノードは「広告システム（asi）＋その中の販売者アカウント（sid）」の組</text>
+</svg>
